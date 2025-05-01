@@ -200,11 +200,11 @@ impl<T: Neg<Output = T> + Copy, const D: usize> Neg for Vector<T, D> {
 }
 
 impl<T: Add<Output = T> + Sub<Output = T> + Neg<Output = T> + Copy> Vector2<T> {
-    pub fn rotat_90_cw(&self, pivot: Vector2<T>) -> Self {
+    pub fn rotate_90_cw(&self, pivot: Vector2<T>) -> Self {
         self.rotate_90(pivot, true)
     }
 
-    pub fn rotat_90_ccw(&self, pivot: Vector2<T>) -> Self {
+    pub fn rotate_90_ccw(&self, pivot: Vector2<T>) -> Self {
         self.rotate_90(pivot, false)
     }
 
