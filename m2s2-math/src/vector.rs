@@ -31,21 +31,21 @@ pub struct Vector<T, const D: usize> {
 
 impl<T> Vector2<T> {
     #[inline]
-    pub fn new(x: T, y: T) -> Self {
+    pub const fn new(x: T, y: T) -> Self {
         Vector2 { data: [x, y] }
     }
 }
 
 impl<T> Vector3<T> {
     #[inline]
-    pub fn new(x: T, y: T, z: T) -> Self {
+    pub const fn new(x: T, y: T, z: T) -> Self {
         Vector3 { data: [x, y, z] }
     }
 }
 
 impl<T> Vector4<T> {
     #[inline]
-    pub fn new(x: T, y: T, z: T, w: T) -> Self {
+    pub const fn new(x: T, y: T, z: T, w: T) -> Self {
         Vector4 { data: [x, y, z, w] }
     }
 }
