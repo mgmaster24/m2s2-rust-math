@@ -7,8 +7,8 @@ pub use crate::matrix::{
     Matrix3x3i32, Matrix3x3i64, Matrix4x4f32, Matrix4x4f64, Matrix4x4i32, Matrix4x4i64,
 };
 pub use crate::vector::{
-    Vector2f32, Vector2f64, Vector2i32, Vector2i64, Vector3f32, Vector3f64, Vector3i32, Vector3i64,
-    Vector4f32, Vector4f64, Vector4i32, Vector4i64,
+    Vector, Vector2, Vector2f32, Vector2f64, Vector2i32, Vector2i64, Vector3, Vector3f32,
+    Vector3f64, Vector3i32, Vector3i64, Vector4, Vector4f32, Vector4f64, Vector4i32, Vector4i64,
 };
 
 #[cfg(test)]
