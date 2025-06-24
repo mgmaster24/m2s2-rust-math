@@ -1,9 +1,4 @@
-use std::slice;
-use std::{
-    mem::MaybeUninit,
-    ops::{Add, AddAssign, Index, IndexMut, Mul, Neg, Sub, SubAssign},
-    ptr,
-};
+pub mod vector_ops;
 
 pub type Vector2<T> = Vector<T, 2>;
 pub type Vector3<T> = Vector<T, 3>;
@@ -23,6 +18,13 @@ pub type Vector4i32 = Vector4<i32>;
 pub type Vector4i64 = Vector4<i64>;
 pub type Vector4f32 = Vector4<f32>;
 pub type Vector4f64 = Vector4<f64>;
+
+use std::slice;
+use std::{
+    mem::MaybeUninit,
+    ops::{Add, AddAssign, Index, IndexMut, Mul, Neg, Sub, SubAssign},
+    ptr,
+};
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub struct Vector<T, const D: usize> {

@@ -11,6 +11,10 @@ pub use crate::vector::{
     Vector3f64, Vector3i32, Vector3i64, Vector4, Vector4f32, Vector4f64, Vector4i32, Vector4i64,
 };
 
+// Export graphics traits for users who want to use them directly
+pub use crate::matrix::transfom_traits::{Transform2x2, Transform3x3, Transform4x4};
+pub use crate::vector::vector_ops::{Vector2Ops, Vector3Ops};
+
 #[cfg(test)]
 mod tests {
     use crate::{Matrix2x2f32, Matrix2x2i32, Matrix4x4f32, Matrix4x4i32};

@@ -11,6 +11,8 @@ mod base_ops;
 mod indentity_ops;
 mod mat_mul_mat;
 mod mat_mul_vec;
+pub mod transfom_traits;
+pub mod transform_impl;
 
 macro_rules! define_matrix_struct {
     ($name:ident, $rows:expr, $cols:expr, $size:expr) => {
